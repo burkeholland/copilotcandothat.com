@@ -1,0 +1,54 @@
+---
+---
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="section">
+        {% include header.html %}
+    </div>
+    <div class="section">
+        <div class="container is-max-widescreen">
+            <div>
+                {% for tip in site.data.tips %}
+
+                {% assign index = forloop.index %}
+                {% unless index >= 10 %}
+                {% assign index="0" | append: index %}
+                {% endunless %}
+                <!-- <div class="list-container">
+                    <div class="d-flex flex-column flex-md-row flex-items-center">
+                        <div class="flex-1 video-description">
+                            <span class="video-counter">{{ index }}</span>
+                            <h1 class="ml-3 mb-2 lh-condensed">{{ tip.title }}</h1>
+                            <p class="mb-4 color-gray-3">{{tip.description }}</p>
+                            <div class="text-md-right">
+                                <a class="video-cta not-underline-none" href="{{ tip.cta }}">{{ tip.link }}</a>
+                            </div>
+                        </div>
+                        <div class="flex-grow-0 p-4 video-container">
+                            <div class="iframe-container">
+                                <iframe src={{ "https://www.youtube-nocookie.com/embed/" | append: tip.videoId }}
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-8 mx-auto col-md-1"> -->
+                {% include tip.html data = tip number = index %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

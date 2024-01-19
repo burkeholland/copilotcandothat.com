@@ -1,0 +1,19 @@
+<section class="section">
+    <div class="columns">
+        <div class="column">
+            <div class="num">{{ number }}</div>
+            <h2 class="is-size-4 has-text-white">
+                {{ tip.title }}
+            </h2>
+            <p class="is-size-5">
+                {{ tip.description }}
+            </p>
+            <a class="button" href="{{ tip.cta }}">Learn More</a>
+        </div>
+        <div class="column">
+            <iframe src={{ "https://www.youtube-nocookie.com/embed/" | append: tip.videoId }} frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen width="560" height="315"></iframe>
+        </div>
+    </div>
+</section>
