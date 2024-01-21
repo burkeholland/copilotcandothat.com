@@ -1,17 +1,17 @@
 [
     {
-        "title": "Codespaces",
-        "description": "No editor, no problem. Code in a browser with a real VS Code experience, powered by GitHub Codespaces.",
+        "title": "Commit Messages",
+        "description": "Look for Copilot in your terminal after doing a `git add` for an auto-generated commit message.",
         "videoId": "terminal-commit.mp4",
-        "link": "GitHub Codespaces",
-        "cta": "https://github.com/features/codespaces?WT.mc_id=vscode-gcom-cxa"
+        "link": "",
+        "cta": ""
     },
     {
-        "title": "Clone And Code",
-        "description": "You can directly clone a repo from Visual Studio Code. Authenticate with your GitHub account and clone any repo you want. VS Code takes care of setting your remote so you can clone, code and push in no time flat. ",
+        "title": "Speak Your Mind",
+        "description": "If you get tired of typing to Copilot, speak to it instead. Download the VS Code Voice extension and look for the microphone icon.",
         "videoId": "vscode-voice.mp4",
-        "link": "GitHub extension for VS Code",
-        "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
+        "link": "",
+        "cta": ""
     },
     {
         "title": "Publish Your Project",
