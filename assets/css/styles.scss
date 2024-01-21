@@ -11,6 +11,22 @@
 @import "../node_modules/bulma/sass/helpers/spacing.sass";
 
 html, body {
-    background-color: #161b22;
-    color: #c9d1d9;
+
 }
+
+// // psudeo element that goes at the top of the page
+// #top {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+// //   height: 00px;  
+// //     background: rgb(9,190,204);
+// //     background: linear-gradient(0deg, rgba(3,37,81,1) 10%, rgba(9,190,204,1) 90%);
+// }
+
+#header {
+    z-index: 101;
+    position: relative;
+}
+
