@@ -1,18 +1,20 @@
-<section class="section">
-    <div class="columns">
-        <div class="column">
-            <div class="num">{{ number }}</div>
-            <h2 class="is-size-3 has-text-white">
-                {{ tip.title }}
-            </h2>
-            <p class="is-size-6">
-                {{ tip.description }}
-            </p>
-            <a class="button" href="{{ tip.cta }}">Learn More</a>
+<div class="container is-widescreen">
+    <section class="section">
+        <div class="columns">
+            <div class="column">
+                <div class="num">{{ number }}</div>
+                <h2 class="is-size-3 has-text-white">
+                    {{ tip.title }}
+                </h2>
+                <p class="is-size-6">
+                    {{ tip.description }}
+                </p>
+                <a class="button" href="{{ tip.cta }}">Learn More</a>
+            </div>
+            <div class="column">
+                <video preload="none" tabindex="-1" playsinline controls aria-label="Embedded video"
+                    poster="assets/covers/{{ tip.videoId }}.jpg" src="assets/videos/{{ tip.videoId }}.mp4"></video>
+            </div>
         </div>
-        <div class="column">
-            <video preload="none" tabindex="-1" playsinline controls aria-label="Embedded video"
-                src="https://copilotcandothatstorage.blob.core.windows.net/video/{{ tip.videoId }}"></video>
-        </div>
-    </div>
-</section>
+    </section>
+</div>

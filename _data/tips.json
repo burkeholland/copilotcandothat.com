@@ -1,141 +1,148 @@
 [
     {
-        "title": "Commit Messages",
-        "description": "Look for Copilot in your terminal after doing a `git add` for an auto-generated commit message.",
-        "videoId": "terminal-commit.mp4",
+        "title": "Naming things is hard...maybe",
+        "description": "Press F2 to rename any symbol in your project and Copilot will suggest a name for you based on how the code is used and other names in the file. When in doubt, just use 'foo' and let Copilot solve the hard problems in computer science.",
+        "videoId": "copilot-rename",
         "link": "",
         "cta": ""
     },
     {
-        "title": "Speak Your Mind",
-        "description": "If you get tired of typing to Copilot, speak to it instead. Download the VS Code Voice extension and look for the microphone icon.",
-        "videoId": "vscode-voice.mp4",
+        "title": "Write CSS Faster",
+        "description": "Copilot is pretty, pretty, pretty good at CSS.",
+        "videoId": "ccdt-css",
         "link": "",
         "cta": ""
     },
     {
-        "title": "Publish Your Project",
-        "description": "Publish any project directly to GitHub without having to create a repo first. VS Code will create the repo for you and give you control over whether or not it should be public or private.",
-        "videoId": "3BBvBwDW4CY",
-        "link": "GitHub extension for VS Code",
-        "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
+        "title": "Copilot reads your mind",
+        "description": "It's scary good at predicting what you're going to write next.",
+        "videoId": "ccdt-read-your-mind",
+        "link": "",
+        "cta": ""
+    },
+    {
+        "title": "Your personal unit tester",
+        "description": "GitHub Copilot can write your unit tests for you. It's pretty good at this - especially when you highlight the code you want a unit test for.",
+        "videoId": "ccdt-testing",
+        "link": "",
+        "cta": ""
     },
     {
         "title": "Integrated Source Control View",
         "description": "The source control view tracks your file changes and makes it easy to commit and push those changes. Add a commit message, mention another user in the repo, and click on 'sync changes' in the status bar. This will pull any remote changes down, and push your commits upstream.",
-        "videoId": "TUYt4oXLxQs",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Branching",
         "description": "From the status bar, you can view all branches and easily switch to another one. From the command palette, you can also checkout another branch, create a new one, or rename a branch. Branch away!",
-        "videoId": "9NVFMw-MKt0",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
         {
         "title": "Stashing",
         "description": "Temporarily set aside the code changes you already made with a Git stash then get back to them later!",
-        "videoId": "odj71GP0Z1Q",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Stage Commits",
         "description": "The Source Control view in VS Code lets you stage specific changes only, so you can control what's part of your commit and what's still a WIP (Work In Progress) Then click on ✔️ to make a commit.",
-        "videoId": "3n-_lSJ48M4",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Merge Your Way",
         "description": "Do you most commonly merge, squash/merge, or rebase/merge? Well, from the GitHub Pull Request and Issues extension, you can choose either merge option.",
-        "videoId": "LleABh-TGLo",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Handle Merge Conflicts",
         "description": "VS Code will recognize merge conflicts, highlight the differences, and make it easy to choose the current change or the incoming change. If you have multiple changes, you can search for 'Merge Conflict' in the command palette and take action on all conflicts.",
-        "videoId": "ybCxPHzRJfA",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Change Your Diff View",
         "description": "Some people prefer a to see their diff's side-by-side and some prefer an inline view. Get both in VS Code. This setting persists when it's changed so you can set it and forget it.",
-        "videoId": "aVmGwnCjRto",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Jump Directly To GitHub",
         "description": "Sometimes you're just knee deep in source code and need to switch over to GitHub. With the <a href='https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github?WT.mc_id=vscode-gcom-cxa'>GitHub Pull Requests and Issues</a> extension, you can copy a permalink or directly open a permalink in GitHub so you don't lose your place.",
-        "videoId": "aXZl6sYQskY",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Create Issues",
         "description": "Do you find yourself putting //TODO comments throughout your code and then forgetting to...do them? With the GitHub Pull Requests and Issues extension, you can make those comments actionable and create GH issues directly from code comments.",
-        "videoId": "VllCkboZylA",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Manage Issues",
         "description": "View issues from GitHub directly from VS Code. Create custom queries using the same GitHub filter syntax you already know. Your issues organized your way.",
-        "videoId": "q_PqHX9Aki0",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Request A Review",
         "description": "You can request a review on your PR right from VS Code using the GitHub Pull Requests and Issues extension. Open the PR from the Github Pull Requests explorer and assign away.",
-        "videoId": "q1CSkYTeo-0",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Keep Track of PRs",
         "description": "Choose the categories you see in the GitHub Pull Requests and Issues tree view. Customize it and make sure you never lose track of PRs again.",
-        "videoId": "gqBDz5cFeSc",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Code Reviews",
         "description": "View PRs. Check out branches. Add comments. Merge and delete branches from the editor.",
-        "videoId": "RFonwEAZCPo",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Time Travel",
         "description": "You can see the Git commit history of a specific file in the Timeline view. Choosing a commit opens up the diff view of the changes from that commit. Easily copy the commit Id or commit message to help you go to important points in your code's ",
-        "videoId": "BQv5eqLLGX8",
+        "videoId": "copilot-rename",
         "link": "GitHub extension for VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/github?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "GitLens",
         "description": "Get in-line blame annotations and hover information for recent commits, search through commits, visualize and compare commits across branches, and so much more. <a href='https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens?WT.mc_id=vscode-gcom-cxa'>GitLens</a> is a must-have extension if you're using version control in VS Code.",
-        "videoId": "_cMHkFXw3qc",
+        "videoId": "copilot-rename",
         "link": "GitLens extension",
         "cta": "https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Sign Commits",
         "description": "Use the integrated terminal in VS Code for advanced actions like GPG signing your commits so you can get that big green \"verified\" badge.",
-        "videoId": "2ISu2KTPzuQ",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     },
     {
         "title": "Check Under The Hood",
         "description": "Curious to see the Git commands VS Code is doing? You can always peek under the hood. The full output of what VS Code is doing with Git is always available for you in case you need it.",
-        "videoId": "L3tCzFc77A8",
+        "videoId": "copilot-rename",
         "link": "Using Git in VS Code",
         "cta": "https://code.visualstudio.com/docs/editor/versioncontrol?WT.mc_id=vscode-gcom-cxa"
     }
