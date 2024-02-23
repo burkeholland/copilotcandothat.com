@@ -1,0 +1,10 @@
+# Site settings
+title: Copilot can do that?
+email: burkeholland@gmail.com
+description: Magical things you can do with GitHub Copilot
+baseurl: "" 
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Exclude from processing.
+exclude:
+  - node_modules
