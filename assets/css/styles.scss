@@ -1,3 +1,6 @@
+---
+---
+
 html, body {
     background: linear-gradient(to bottom, #121521, #0e1117);
     
@@ -7,4 +10,23 @@ html, body {
     > *:nth-child(even) {
         background-color: #0e1117;
     }
+}
+
+.has-text-blue {
+    color: #0078d4;
+}
+
+.num {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 10em;
+    font-weight: 100;
+}
+
+.tip-title {
+    margin-top: 3em;
+    margin-left: 1em;
+    position: relative;
+    z-index: 9999;
 }

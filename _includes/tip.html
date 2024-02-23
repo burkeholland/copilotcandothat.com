@@ -1,15 +1,20 @@
 <div class="container is-widescreen">
     <section class="section">
-        <div class="columns">
+        <div class="columns is-vcentered">
             <div class="column">
-                <div class="num">{{ number }}</div>
-                <h2 class="is-size-3 has-text-white">
-                    {{ tip.title }}
-                </h2>
-                <p class="is-size-6">
-                    {{ tip.description }}
-                </p>
-                <a class="button" href="{{ tip.cta }}">Learn More</a>
+                <div class="column">
+                    <div class="num has-text-grey-darker">{{ include.number }}</div>
+                    <h2 class="is-size-3 has-text-white tip-title">
+                        {{ tip.title }}
+                    </h2>
+                </div>
+                <div class="column">
+                    <p class="is-size-6 has-text-light">
+                        {{ tip.description }}
+                    </p>
+
+                </div>
+                <!-- <a class="button" href="{{ tip.cta }}">Learn More</a> -->
             </div>
             <div class="column">
                 <video preload="none" tabindex="-1" playsinline controls aria-label="Embedded video"
