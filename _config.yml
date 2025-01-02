@@ -8,3 +8,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Exclude from processing.
 exclude:
   - node_modules
+
+collections:
+  tips:
+    output: true
+    permalink: /_tips/:path/

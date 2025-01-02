@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copilot Can Do That - {{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <div>
+        {% include header.html %}
+        <div class="main-content">
+            <div class="primary-content">
+                <div class="video-player">
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/{{ page.videoId }}?si=rJDbCwQbe-AfjECq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="tags">
+                    {% for tag in page.tags %}
+                    <span class="tag">{{ tag }}</span>
+                    {% endfor %}
+                </div>
+                <div class="video-info">
+                    <h1 id="video-title" class="video-title">{{ page.title }}</h1>
+                    <div id="video-meta" class="video-meta">
+                        <span class="description">{{ page.content }}</span>
+                    </div>
+                </div>
+            </div>
+            <aside class="video-list">
+                {% for tip in site.tips %}
+                <a href="{{ tip.url }}">
+                    <div class="video-item">
+                        <div class="thumbnail">
+                            <div class="thumbnail">
+                                <img src="https://img.youtube.com/vi/{{ tip.videoId }}/sddefault.jpg" alt="Thumbnail"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="video-item-info">
+                            <h3>{{ tip.title }}</h3>
+                            <div class="video-item-meta">
+                                <span>{{ tip.description }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </aside>
+        </div>
+    </div>
+</body>
+
+</html>
