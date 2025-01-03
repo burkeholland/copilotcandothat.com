@@ -1,0 +1,56 @@
+---
+layout: default
+title: Submit a Tip
+permalink: /submit/
+---
+
+<div class="main-content">
+    <div class="primary-content">
+        <div class="submission-guide">
+            <h1>Submit a Tip</h1>
+            
+            <p>Want to share a GitHub Copilot tip? Follow these steps to submit your tip:</p>
+
+            <h2>1. Create the Video</h2>
+            <ul>
+                <li>Record a short, focused video demonstrating your Copilot tip</li>
+                <li>Upload it to YouTube</li>
+                <li>Make sure the video clearly shows Copilot in action</li>
+            </ul>
+
+            <h2>2. Create a Pull Request</h2>
+            <ul>
+                <li>Fork the <a href="https://github.com/aaronpowell/copilotcandothat.com" class="accent-link">repository</a></li>
+                <li>Create a new branch for your tip</li>
+                <li>Add a new markdown file in the <code>_tips</code> directory</li>
+            </ul>
+
+            <h2>3. Format Your Tip</h2>
+            <p>Use this template for your markdown file:</p>
+            <pre class="code-block">
+---
+title: Your Tip Title
+description: A brief description of what your tip demonstrates
+videoId: YOUR_YOUTUBE_VIDEO_ID
+layout: tip
+tags: [relevant, tags, here]
+---</pre>
+
+            <h2>4. Submit Your PR</h2>
+            <ul>
+                <li>Ensure your tip follows the existing format</li>
+                <li>Submit a pull request to the main repository</li>
+                <li>Wait for review and approval</li>
+            </ul>
+
+            <div class="submission-note">
+                <p>Tips should be focused on GitHub Copilot features and capabilities. 
+                Make sure your demonstration is clear and provides value to other developers.</p>
+            </div>
+
+            <a href="https://github.com/aaronpowell/copilotcandothat.com/pulls" class="nav-button">
+                Submit on GitHub
+            </a>
+        </div>
+    </div>
+</div>

@@ -3,7 +3,7 @@ title: Copilot can do that?
 email: burkeholland@gmail.com
 description: Magical things you can do with GitHub Copilot
 baseurl: "" 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://copilotcandothat.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Exclude from processing.
 exclude:
@@ -12,4 +12,4 @@ exclude:
 collections:
   tips:
     output: true
-    permalink: /_tips/:path/
+    permalink: /tips/:path

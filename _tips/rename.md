@@ -3,7 +3,6 @@ title: Name suggestions
 description: Press F2 to rename any symbol in your project and Copilot will suggest a name for you.
 videoId: xmAzK7gUQJQ
 layout: tip
-permalink: /tips/rename/
 tags: [silent, short]
 ---
 
