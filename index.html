@@ -3,6 +3,11 @@ layout: default
 ---
 <div class="main-content">
     <div class="primary-content">
+        <!-- About Section -->
+        <div class="about-section">
+            <h1>GitHub Copilot Tips & Tricks</h1>
+            <p>All the best things about GitHub Copilot that nobody ever bothered to show you.</p>
+        </div>
         <div class="tip-list">
             {% for tip in site.tips %}
             <a href="{{ tip.url }}">
@@ -14,8 +19,11 @@ layout: default
                             style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <p class="tip-description">{{ tip.description }}</p>
-                    <p><time datetime="{{ tip.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y"
-                            }}</time></p>
+                    <div class="tags">
+                        {% for tag in tip.tags %}
+                            <span class="tag">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
                 </div>
             </a>
             {% endfor %}
