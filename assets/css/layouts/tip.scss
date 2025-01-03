@@ -121,5 +121,10 @@
     .description {
         flex: 1 1 100%;
         margin-bottom: 0.5rem;
+
+        a {
+            color: $accent;
+            text-decoration: underline;
+        }
     }
 }
