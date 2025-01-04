@@ -1,18 +1,18 @@
-<aside class="video-list">
-    {% for tip in site.tips %}
-    <a href="{{ tip.url }}" aria-label="View tip: {{ tip.title }}">
-        <div class="video-item {% if tip.url == page.url %}active{% endif %}">
-            <div class="thumbnail">
-                <img src="https://img.youtube.com/vi/{{ tip.videoId }}/sddefault.jpg" alt="Thumbnail"
-                    style="width: 100%; height: 100%; object-fit: cover;">
+{% for tip in site.tips %}
+<a href="{{ tip.url }}" aria-label="View tip: {{ tip.title }}">
+    <div class="p-1 mb-1">
+        <div class="row {% if tip.url == page.url %}bg-dark{% endif %} br-3 hover-lighten pt-1 pb-1">
+            <div class="col-xs-5">
+                <img src="https://img.youtube.com/vi/{{ tip.videoId }}/maxresdefault.jpg" alt="Thumbnail"
+                    class="rounded">
             </div>
-            <div class="video-item-info">
-                <h3>{{ tip.title }}</h3>
-                <div class="video-item-meta">
-                    <span>{{ tip.description }}</span>
+            <div class="col-xs-7">
+                <h3 class="fs-4 mb-2">{{ tip.title }}</h3>
+                <div>
+                    <p class="fs-6">{{ tip.description }}</p>
                 </div>
             </div>
         </div>
-    </a>
-    {% endfor %}
-</aside>
+    </div>
+</a>
+{% endfor %}

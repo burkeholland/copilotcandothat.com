@@ -1,0 +1,101 @@
+@use 'sass:math';
+
+// Define breakpoints
+$breakpoints: (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px
+);
+
+$gap: 16px;
+
+@mixin generate-columns($breakpoint) {
+    @for $i from 1 through 12 {
+        .col-#{$breakpoint}-#{$i} {
+            flex: 0 0 calc(100% / 12 * #{$i});
+        }
+    }
+}
+
+// Container class
+.container {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media (min-width: map-get($breakpoints, 'sm')) {
+        max-width: map-get($breakpoints, 'sm');
+    }
+
+    @media (min-width: map-get($breakpoints, 'md')) {
+        max-width: map-get($breakpoints, 'md');
+    }
+
+    @media (min-width: map-get($breakpoints, 'lg')) {
+        max-width: map-get($breakpoints, 'lg');
+    }
+
+    @media (min-width: map-get($breakpoints, 'xl')) {
+        max-width: map-get($breakpoints, 'xl');
+    }
+}
+
+/* Row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Column base */
+[class*='col-'] {
+    padding: $gap / 2;
+    box-sizing: border-box;
+}
+
+/* Generate columns for each breakpoint */
+@include generate-columns(xs);
+
+@each $breakpoint, $value in $breakpoints {
+    @if $value !=0 {
+        @media (min-width: $value) {
+            @include generate-columns($breakpoint);
+        }
+    }
+}
+
+/* Full width column */
+.col-full {
+    flex: 1 1 auto;
+}
+
+/* Auto width column */
+.col-auto {
+    flex: 0 0 auto;
+}
+
+// .col-sm-12 {
+//     flex: 0 0 100%;
+//     max-width: 100%;
+// }
+
+// .col-lg-7 {
+//     flex: 0 0 calc(58.3333% - 8px); // 7/12 - half of the gap
+//     max-width: calc(58.3333% - 8px); // 7/12 - half of the gap
+// }
+
+// .col-lg-5 {
+//     flex: 0 0 calc(41.6667% - 8px); // 5/12 - half of the gap
+//     max-width: calc(41.6667% - 8px); // 5/12 - half of the gap
+// }
+
+// // Column that takes up all available space
+// .col-grow {
+//     flex: 1 1 auto;
+// }
+
+// // Column that only occupies as much space as needed
+// .col-shrink {
+//     flex: 0 0 auto;
+// }

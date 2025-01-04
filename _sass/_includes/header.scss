@@ -2,24 +2,8 @@
     background: $bg-dark;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     padding: 1rem;
-    position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 100;
-
-    &-content {
-        max-width: 1200px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    &-logo {}
-
-    &-link {}
-
-    &-title {}
+    height: 5rem;
 }
 
 .nav-button {

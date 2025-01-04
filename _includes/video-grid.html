@@ -1,0 +1,14 @@
+<div class="row">
+    {% for tip in site.tips %}
+    <div class="col-sm-6 col-lg-4 p-2">
+        <a href="{{ tip.url }}">
+            <div class=" full-height border-light br-3 p-3 hover-lighten">
+                <img src="https://img.youtube.com/vi/{{ tip.videoId }}/maxresdefault.jpg" alt="Thumbnail"
+                    class="rounded" />
+                <h4 class="mt-3">{{ tip.title }}</h4>
+                <p class="mt-2 fs-5">{{ tip.description }}</p>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

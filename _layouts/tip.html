@@ -1,28 +1,22 @@
 ---
 layout: default
 ---
-<main class="main-content">
-    <article class="primary-content">
-        <section class="video-player">
-            <div class="video-container">
-                <iframe width="560" height="315"
-                    src="https://www.youtube.com/embed/{{ page.videoId }}?si=rJDbCwQbe-AfjECq"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-sm-12 col-lg-8">
+            {% include video-embed.html %}
+            <div class="tags">
+                {% for tag in page.tags %}
+                <span class="tag">{{ tag }}</span>
+                {% endfor %}
             </div>
-        </section>
-        <section class="tags">
-            {% for tag in page.tags %}
-            <span class="tag">{{ tag }}</span>
-            {% endfor %}
-        </section>
-        <section class="video-info">
-            <h1 id="video-title" class="video-title">{{ page.title }}</h1>
-            <div id="video-meta" class="video-meta">
-                <span class="description">{{ page.content }}</span>
+            <h2 class="fs-2 pt-3 pb-3 text-accent">{{ page.title }}</h2>
+            <p class="text-faded">{{ page.content }}</p>
+        </div>
+        <div class="col-sm-12 col-lg-4">
+            <div class="bg-light br-4 p-1">
+                {% include video-list.html %}
             </div>
-        </section>
-    </article>
-    {% include video-list.html %}
-</main>
+        </div>
+    </div>
+</div>

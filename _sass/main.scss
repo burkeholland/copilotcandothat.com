@@ -1,0 +1,35 @@
+@import '_variables';
+@import '_base';
+@import '_layout';
+@import '_utils';
+
+@import '_includes/header';
+@import '_includes/video-embed';
+
+.hover-lighten {
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: lighten($bg-light, 5%);
+    }
+}
+
+.tags {
+    margin-top: 1rem;
+}
+
+.tag {
+    background: $primary;
+    padding: 0.15rem 0.5rem;
+    border-radius: 0.75rem;
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.note {
+    background: rgba(242, 181, 68, 0.1);
+    border-left: 4px solid #F2B544;
+    padding: 1rem;
+    margin: 2rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
