@@ -14,32 +14,18 @@ $gap: 16px;
 @mixin generate-columns($breakpoint) {
     @for $i from 1 through 12 {
         .col-#{$breakpoint}-#{$i} {
-            flex: 0 0 calc(100% / 12 * #{$i});
+            flex: 0 0 calc(100% / 12 * #{$i} - #{$gap} / 12);
+            max-width: calc(100% / 12 * #{$i} - #{$gap} / 12);
         }
     }
 }
 
 // Container class
 .container {
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media (min-width: map-get($breakpoints, 'sm')) {
-        max-width: map-get($breakpoints, 'sm');
-    }
-
-    @media (min-width: map-get($breakpoints, 'md')) {
-        max-width: map-get($breakpoints, 'md');
-    }
-
-    @media (min-width: map-get($breakpoints, 'lg')) {
-        max-width: map-get($breakpoints, 'lg');
-    }
-
-    @media (min-width: map-get($breakpoints, 'xl')) {
-        max-width: map-get($breakpoints, 'xl');
-    }
+    width: 100%;
+    max-width: 1200px; // Set a maximum width for the container
+    padding: 0 math.div($gap, 2);
+    margin: 0 auto;
 }
 
 /* Row */
@@ -50,7 +36,7 @@ $gap: 16px;
 
 /* Column base */
 [class*='col-'] {
-    padding: $gap / 2;
+    padding: math.div($gap, 2);
     box-sizing: border-box;
 }
 
@@ -58,7 +44,7 @@ $gap: 16px;
 @include generate-columns(xs);
 
 @each $breakpoint, $value in $breakpoints {
-    @if $value !=0 {
+    @if $value != 0 {
         @media (min-width: $value) {
             @include generate-columns($breakpoint);
         }
@@ -74,28 +60,3 @@ $gap: 16px;
 .col-auto {
     flex: 0 0 auto;
 }
-
-// .col-sm-12 {
-//     flex: 0 0 100%;
-//     max-width: 100%;
-// }
-
-// .col-lg-7 {
-//     flex: 0 0 calc(58.3333% - 8px); // 7/12 - half of the gap
-//     max-width: calc(58.3333% - 8px); // 7/12 - half of the gap
-// }
-
-// .col-lg-5 {
-//     flex: 0 0 calc(41.6667% - 8px); // 5/12 - half of the gap
-//     max-width: calc(41.6667% - 8px); // 5/12 - half of the gap
-// }
-
-// // Column that takes up all available space
-// .col-grow {
-//     flex: 1 1 auto;
-// }
-
-// // Column that only occupies as much space as needed
-// .col-shrink {
-//     flex: 0 0 auto;
-// }
