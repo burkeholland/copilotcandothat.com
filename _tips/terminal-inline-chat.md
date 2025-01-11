@@ -1,7 +1,7 @@
 ---
 title: Terminal Inline Chat
 description: Use Terminal Inline Chat to be a terminal expert
-videoId: fGI1y9NMKH8
+videoId: ftPCHPiVuR0
 layout: tip
 tags: [short, silent, chat, terminal]
 ---
