@@ -1,5 +1,5 @@
 ---
-title: Website design
+title: Website Design
 description: How to use GitHub Copilot to help with design
 videoId: -unMIS46MJg
 layout: tip
