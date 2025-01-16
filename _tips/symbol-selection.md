@@ -1,6 +1,6 @@
 ---
 title: Symbol Selection
-description: Attach any symbol(s) to your prompt with the #sym selector
+description: Attach any symbol(s) to your prompt with the \#sym selector
 videoId: fGI1y9NMKH8
 layout: tip
 tags: [short, silent, chat]
