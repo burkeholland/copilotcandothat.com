@@ -1,7 +1,7 @@
 ---
 title: Catch bugs early
 description: GitHub Copilot can catch bugs you don't even know you have.
-videoId: r4oxYdaO8kE
+videoId: a2g4Wncyjos
 layout: tip
 tags: [short]
 ---
